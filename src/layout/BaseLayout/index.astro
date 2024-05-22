@@ -1,0 +1,20 @@
+---
+import "../../global.css";
+---
+
+<html lang="en" data-theme="draula">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Lucas Zawadneak | Fullstack Developer</title>
+  </head>
+  <body>
+    <div class="w-screen min-h-screen flex justify-center bg-base-300">
+      <div class="p-10 max-w-3xl w-full">
+        <slot />
+      </div>
+    </div>
+  </body>
+</html>

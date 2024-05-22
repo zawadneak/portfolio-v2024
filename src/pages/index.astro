@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../layout/BaseLayout/index.astro";
+import Education from "../components/Education/index.astro";
+import Work from "../components/Work/index.astro";
+
+import { Image } from "astro:assets";
+---
+
+<BaseLayout>
+  <div class="flex items-center justify-center gap-5">
+    <Image
+      src="/me.webp"
+      class="rounded-lg shado-lg"
+      height={300}
+      width={300}
+      alt="Lucas"
+    />
+    <div>
+      <h1 class="text-3xl font-black">Lucas Zawadneak</h1>
+      <h2 class="text-xl font-medium">Fullstack Developer</h2>
+      <h3 class="text-sm hover:opacity-50 cursor-pointer transition-all">
+        lucaszawadneak@gmail.com
+      </h3>
+
+      <p class="mt-4 text-sm">
+        My journey in programming started at 16, and since then, I've been
+        captivated by the world of fullstack development. My passion lies in
+        creating products that make a positive impact on people's lives. I'm
+        always eager to dive into meaningful projects, so let's connect and
+        collaborate!
+      </p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <Education />
+
+  <div class="divider"></div>
+
+  <Work />
+</BaseLayout>
